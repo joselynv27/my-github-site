@@ -6,3 +6,6 @@
 I am taking this course for coding. To learn more about how to build codes.
 ## What I Want to Build
 I want to build an app that connects to nature.
+## Collaborator: Nuriyah
+What is one rule or constraint you think is
+most important when using AI tools for coding?

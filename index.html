@@ -7,33 +7,61 @@
 <style>
 body { 
     font-family: Arial, sans-serif; 
-    max-width: 800px;
-    margin: 0 auto; 
+    margin: 0; 
     padding: 20px; 
-    /* Uses your Giphy GIF link */
-    background-image: url('https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExN2s1dTY0b2VmcTZ6dWQ2OTQ2dXF2N2lpZTV4bjl4d3B3YnhhY3Z3ZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/zh5cT0pHWtFSYKY4ku/giphy.gif'); 
-    background-repeat: repeat; 
+    /* Set the background to your Chihuahua mascara GIF */
+    background-image: url('https://giphy.com'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    /* Centers the glass case on the page */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
 }
-h1 { color: #1F4E79; }
+
+/* This is the "glass case" container around your text */
+.glass-container {
+    max-width: 800px;
+    width: 100%;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.45); /* Semi-transparent white */
+    backdrop-filter: blur(12px); /* Blurs the GIF behind the text */
+    -webkit-backdrop-filter: blur(12px); /* Safari support */
+    border-radius: 16px; /* Rounded corners */
+    border: 1px solid rgba(255, 255, 255, 0.25); /* Subtle glass edge border */
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+}
+
+h1 { color: #1F4E79; margin-top: 0; }
 h2 { color: #2E75B6; border-bottom: 2px solid #2E75B6; }
-p { line-height: 1.6; }
+p { line-height: 1.6; color: #111; }
+a { color: #1F4E79; font-weight: bold; }
 </style>
 </head>
 <body>
-<h1>Hi, I'm Joselyn!</h1>
-<h2>About Me</h2>
-<p>I am in 9th grade and will graduate in 2029</p>
-<h2>My Interests</h2>
-<p>I enjoy being with Nuriyah and going outside</p>
-<h2>My Goals for This Course</h2>
-<p>I want to learn more about coding and the different ways to write them</p>
-<h2>My GitHub</h2>
-<p>Check out my projects:
-<a href="https://github.com">joselynv27</a>
-</p>
-<h2>My Project</h2>
-<p>View my Onshape design:
-<a href="https://onshape.com" target="_blank">Onshape CAD Project</a>
-</p>
+
+<!-- All content is now inside the glass case -->
+<div class="glass-container">
+    <h1>Hi, I'm Joselyn!</h1>
+    <h2>About Me</h2>
+    <p>I am in 9th grade and will graduate in 2029</p>
+    <h2>My Interests</h2>
+    <p>I enjoy being with Nuriyah and going outside</p>
+    <h2>My Goals for This Course</h2>
+    <p>I want to learn more about coding and the different ways to write them</p>
+    <h2>My GitHub</h2>
+    <p>Check out my projects:
+    <a href="https://github.com">joselynv27</a>
+    </p>
+    <h2>My Project</h2>
+    <p>View my Onshape design:
+    <a href="https://onshape.com" target="_blank">Onshape CAD Project</a>
+    </p>
+</div>
+
 </body>
 </html>
